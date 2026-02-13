@@ -93,6 +93,35 @@
 </head>
 <body>
 
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 15px; /* 横の余白を少し削って中身を広くする */
+    }
+
+    h2 {
+        font-size: 1.1rem; /* 質問文を少し小さくして収まりを良くする */
+    }
+
+    .scale-container {
+        gap: 5px; /* ボタン同士の最低限の隙間を確保 */
+    }
+
+    .circle-btn {
+        /* スマホではボタンを少しだけ小ぶりにする */
+        transform: scale(0.9); 
+    }
+
+    .btn-xl, .btn-xs { width: 50px; height: 50px; }
+    .btn-l, .btn-s { width: 40px; height: 40px; }
+    .btn-m { width: 30px; height: 30px; }
+
+    .scale-label {
+        font-size: 0.7rem; /* 「同意する」などの文字を小さく */
+        width: 45px;
+    }
+}
+
 <div class="container">
     <div id="start-area">
         <h1>局適性診断</h1>
